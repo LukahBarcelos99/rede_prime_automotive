@@ -1,0 +1,17 @@
+[
+    {   
+        "family": "roboto",
+        
+        "fonts": [
+            {
+                "assets": "fonts/Roboto/Roboto-Bold.ttf",
+                "weight": 900
+            },
+            {"assets": "fonts/Roboto/Roboto-Regular.ttf"},
+            {"assets":"fonts/Roboto/Roboto-Italic.ttf"}
+        ]
+
+
+
+    }
+]
