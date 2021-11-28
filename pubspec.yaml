@@ -91,3 +91,6 @@ flutter:
   assets:
     - assets/redePrimeAutomotive.png
     - assets/profileImage.jpg
+    - assets/icons/user-solid.svg
+    - assets/icons/user-shield-solid.svg
+    - assets/icons/sign-in-alt-solid.svg

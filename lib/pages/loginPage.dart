@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors, file_names, deprecated_member_use
+// ignore_for_file: prefer_const_constructors, file_names, deprecated_member_use, unused_import, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:rede_prime_automotive/pages/loginResetPasswordPage.dart';
+import 'package:rede_prime_automotive/pages/loginRegisterPage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -11,6 +12,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  get onPressed => null;
+
   @override
   Widget build(BuildContext context) {
     //Is a Widget important to create a screen. With this widget you can put AppBars, FloatingActionButton, etc.
@@ -83,29 +86,42 @@ class _LoginPageState extends State<LoginPage> {
             //Putting an enter button.
 
             SizedBox(
-              height: 10,
+              height: 15,
             ),
-            ButtonTheme(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0),
+            Container(
+              height: 30,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                color: Colors.black54,
+                borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
-              height: 30.0,
-              child: RaisedButton(
-                //action of button.
-                onPressed: () => {},
-                child: Text(
-                  "Entrar",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w200,
-                    color: Colors.amber,
-                    fontSize: 20,
-                    fontFamily: "Arial",
+              child: SizedBox.expand(
+                child: FlatButton(
+                  onPressed: () => {},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Entrar",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          color: Colors.amber,
+                          fontSize: 20,
+                          fontFamily: "Arial",
+                        ),
+                      ),
+                      //Putting a icon of User
+                      //Container(
+                      //child: SizedBox(
+                      // child: Image.asset("assets/icon/user-solid.svg"),
+                      //height: 28,
+                      //width: 28,
+                      // ),
+                    ],
                   ),
                 ),
-                color: Colors.black54,
               ),
             ),
-
             //Container to configure the interactive "Did you haven't an account?"
             Container(
               height: 27,
@@ -118,7 +134,14 @@ class _LoginPageState extends State<LoginPage> {
                     fontStyle: FontStyle.italic,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginRegisterPage(),
+                    ),
+                  );
+                },
               ),
             ),
 
