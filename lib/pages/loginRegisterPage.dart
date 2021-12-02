@@ -1,6 +1,7 @@
-// ignore_for_file: file_names, prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: file_names, prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, unused_import
 
 import "package:flutter/material.dart";
+import 'package:rede_prime_automotive/pages/registerUserPage.dart';
 
 class LoginRegisterPage extends StatelessWidget {
   const LoginRegisterPage({Key? key}) : super(key: key);
@@ -61,7 +62,14 @@ class LoginRegisterPage extends StatelessWidget {
               ),
               child: SizedBox.expand(
                 child: FlatButton(
-                  onPressed: () => {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RegisterUserPage(),
+                      ),
+                    );
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

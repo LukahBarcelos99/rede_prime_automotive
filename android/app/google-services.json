@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171929698583",
+    "project_id": "dual6redeprimeautomotive",
+    "storage_bucket": "dual6redeprimeautomotive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171929698583:android:b4e619569a37790cf27752",
+        "android_client_info": {
+          "package_name": "com.example.rede_prime_automotive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171929698583-gr092d60ads70gd6pdt6b4u1ojoo9975.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsybyBRWWHEK5Sz3PA5JXA3lChK9yrkVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171929698583-gr092d60ads70gd6pdt6b4u1ojoo9975.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

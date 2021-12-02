@@ -84,7 +84,6 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             //Putting an enter button.
-
             SizedBox(
               height: 15,
             ),
@@ -121,6 +120,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 8,
             ),
             //Container to configure the interactive "Did you haven't an account?"
             Container(
