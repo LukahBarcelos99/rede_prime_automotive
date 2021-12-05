@@ -2,6 +2,7 @@
 
 import "package:flutter/material.dart";
 import 'package:rede_prime_automotive/pages/registerUserPage.dart';
+import 'package:rede_prime_automotive/pages/registerSecurityPage.dart';
 
 class LoginRegisterPage extends StatelessWidget {
   const LoginRegisterPage({Key? key}) : super(key: key);
@@ -106,7 +107,14 @@ class LoginRegisterPage extends StatelessWidget {
               ),
               child: SizedBox.expand(
                 child: FlatButton(
-                  onPressed: () => {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RegisterSecurityPage(),
+                      ),
+                    );
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
